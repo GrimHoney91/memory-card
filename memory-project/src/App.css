@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+body {
+  background-color: #fff;
+}
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.top-container {
+  background-color: rgb(41, 58, 78);
+  display: flex;
+  flex-direction: row;
+  padding: 0 2rem;
+}
+.top-container h1 {
+  font-size: 5rem;
+  color: white;
+  font-weight: bolder;
+  line-height: 15rem;
+}
+.logo {
+  height: 15rem;
+}
+.scoreboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: fit-content;
+  flex-grow: 1;
+  padding: 2rem 8rem;
+  margin: auto;
+}
+.scoreboard-container h2 {
+  font-size: 2.5rem;
+  width: 18rem;
+  color: #fff;
+}
+.scoreboard-container h2:first-child {
+  margin-bottom: 0.5rem;
+}
+.scoreboard-container h2:last-child {
+  margin-top: 0.5rem;
+}
+
+
+.bottom-container {
+  height: calc(100vh - 15rem);
+  padding: 2rem;
+  position: relative;
+}
+.bottom-container h2 {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: -9rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.image-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+.card-container {
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  border-radius: 3px;
+  margin: auto;
+  height: 18rem;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  background-color: black;
+  padding: 1rem;
+}
+.card-container:hover {
+  transform: scale(1.1);
+}
+.card-images {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.card-text {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  text-align: center;
+  display: block;
+  color: whitesmoke;
+}
+.winningDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+.winningDiv p {
+  color: white;
+  text-align: center;
+  font-size: 16rem;
+}
+.winningDiv button {
+  height: 6rem;
+  width: 25%;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-size: 3rem;
+  transition: all 0.25s ease-in-out;
+}
+.winningDiv button:hover {
+  transform: scale(1.1);
+}
